@@ -1,1 +1,68 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import '~bootstrap/dist/css/bootstrap.min.css';
+ul {
+    columns: 5;
+    -webkit-columns: 4;
+    -moz-columns: 4;
+}
+
+body {
+    height: 100%;
+}
+
+.toptitle {
+    color: white;
+}
+
+@-webkit-keyframes slideInUp {
+    from {
+        -webkit-transform: translate3d(0, 100%, 0);
+        transform: translate3d(0, 100%, 0);
+        visibility: visible;
+    }
+    to {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes slideInUp {
+    from {
+        -webkit-transform: translate3d(0, 100%, 0);
+        transform: translate3d(0, 100%, 0);
+        visibility: visible;
+    }
+    to {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.slideInUp {
+    -webkit-animation-name: slideInUp;
+    animation-name: slideInUp;
+}
+
+h3 {
+    animation: slideInUp 0.25s linear;
+}
+
+p {
+    font-size: 1.5em;
+}
+
+.fizz {
+    color: #DA291CFF;
+    font-weight: 700!important;
+}
+
+.buzz {
+    color: #56A8CBFF;
+    font-weight: 700!important;
+}
+
+.fizzbuzz {
+    color: #53A567FF;
+    font-weight: 700!important;
+}
