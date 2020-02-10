@@ -46,7 +46,7 @@
                     <p [ngClass]="{'fizz': el== 'fizz', 'buzz': el == 'buzz', 'fizzbuzz': el == 'fizzbuzz'}">{{ el }}</p>
                 </li>
             </ul>
-            <h3 *ngIf="clickedsingle && noValidatedSingle">Checked value is: {{singledisplay}}</h3>
+            <h3 class="ml-4" *ngIf="clickedsingle && noValidatedSingle">Checked value is: {{singledisplay}}</h3>
         </div>
     </div>
 </body>
